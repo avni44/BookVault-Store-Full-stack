@@ -1,0 +1,370 @@
+.btn-warning { 
+  background: linear-gradient(45deg, #ffc107, #fd7e14); 
+}
+.btn-danger { 
+  background: linear-gradient(45deg, #dc3545, #c82333); 
+}
+
+/* Forms */
+.form-control {
+  border-radius: 16px;
+  border: 2px solid #e2e8f0;
+  padding: 12px 20px;
+  transition: all 0.3s ease;
+  background: rgba(255,255,255,0.8);
+}
+
+.form-control:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 0.25rem rgba(102,126,234,0.25);
+  background: #fff;
+}
+
+/* Payment */
+.bg-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .book-card {
+    margin-bottom: 2rem;
+  }
+  .btn-lg {
+    padding: 16px;
+    font-size: 1.1rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.book-card {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Cart specific */
+.empty-cart {
+  background: linear-gradient(135deg, #f8f9ff 0%, #e8f4f8 100%);
+  border-radius: 24px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quantity-input {
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.quantity-input input {
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+}
+
+.card {
+  border-radius: 24px !important;
+}
+
+.sticky-top {
+  position: sticky !important;
+}
+
+/* Profile Page */
+.profile-avatar {
+  transition: all 0.3s ease;
+}
+
+.profile-avatar:hover {
+  transform: scale(1.05);
+}
+
+.address-details p {
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+.shadow-xl {
+  box-shadow: 0 25px 60px rgba(0,0,0,0.15) !important;
+}
+
+/* Admin Dashboard */
+.admin-dashboard {
+  color: white;
+}
+
+.admin-avatar, .action-icon {
+  transition: all 0.3s ease;
+}
+
+.admin-avatar:hover, .action-icon:hover {
+  transform: scale(1.05);
+}
+
+.admin-action-card:hover .card {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.2) !important;
+}
+
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+}
+
+.bg-gradient-success {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%) !important;
+}
+
+.bg-gradient-warning {
+  background: linear-gradient(135deg, #ffc107 0%, #fd7e14 100%) !important;
+}
+
+.stat-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15) !important;
+}
+
+/* Custom Dropdown */
+.dropdown-menu-custom {
+  animation: slideDown 0.2s ease-out;
+}
+
+.dropdown-toggle-custom:hover {
+  background: rgba(255,255,255,0.1) !important;
+  border-radius: 8px;
+}
+
+.dropdown-item {
+  transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background: linear-gradient(90deg, #f8f9fa, #e9ecef) !important;
+  transform: translateX(5px);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========== ADMIN LOGIN BOX SIZE STYLES ========== */
+.admin-login-container {
+  /* min-height: 20vh; */
+  background: linear-gradient(135deg, #f8f9ff 0%, #e8f4f8 100%);
+  padding: 2rem 1rem;
+} 
+ 
+.admin-login-small { max-width: 380px !important; margin: 0 auto; }
+.admin-login-medium { max-width: 480px !important; margin: 0 auto; }
+.admin-login-large { max-width: 600px !important; margin: 0 auto; }
+.admin-login-xl { max-width: 750px !important; margin: 0 auto; }
+
+.admin-login-card {
+  border-radius: 24px !important;
+  border: none !important;
+  box-shadow: 0 35px 80px rgba(0,0,0,0.15) !important;
+  overflow: hidden;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(20px);
+}
+
+.admin-login-header {
+  background: linear-gradient(135deg, #ffc107 0%, #fd7e14 50%, #f39c12 100%) !important;
+  color: white !important;
+  padding: 3rem 2rem !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.admin-login-header::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(1deg); }
+}
+
+.crown-icon {
+  width: 90px !important;
+  height: 90px !important;
+  background: rgba(255,255,255,0.9) !important;
+  border: 4px solid white !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2) !important;
+}
+
+.admin-login-form .form-control {
+  border-radius: 20px !important;
+  padding: 16px 24px !important;
+  font-size: 1.1rem;
+  border: 2px solid #e9ecef !important;
+  background: rgba(255,255,255,1) !important;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.admin-login-form .form-control:focus {
+  border-color: #ffc107 !important;
+  box-shadow: 0 0 0 0.3rem rgba(255,193,7,0.2) !important;
+  transform: translateY(-2px);
+}
+
+.admin-login-btn {
+  border-radius: 20px !important;
+  padding: 16px 32px !important;
+  font-size: 1.15rem !important;
+  font-weight: 700 !important;
+  box-shadow: 0 10px 30px rgba(255,193,7,0.4) !important;
+  transition: all 0.3s ease !important;
+}
+
+.admin-login-btn:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 15px 40px rgba(255,193,7,0.5) !important;
+}
+
+@media (max-width: 768px) {
+  .admin-login-medium, .admin-login-large, .admin-login-xl {
+    max-width: 95% !important;
+    margin: 1rem auto;
+  }
+}
+
+/* ========== NAVBAR + DROPDOWN COMPLETE FIX ========== */
+.navbar {
+  background: linear-gradient(135deg, #343a40, #495057) !important;
+  color: white !important;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.2) !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 9999 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ffc107 !important;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-weight: 700 !important;
+}
+
+.navbar-brand:hover {
+  color: #ffc107 !important;
+}
+
+/* Admin login page navbar */
+.admin-login-container .navbar {
+  background: linear-gradient(135deg, #2c3e50, #34495e) !important;
+}
+
+/* DROPDOWN MENU - WHITE TEXT FIX */
+.dropdown-menu {
+  background-color: #2c3e50 !important;
+  border: 1px solid #495057 !important;
+  color: #141111 !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3) !important;
+}
+
+.dropdown-item {
+  color: #0d0a0a !important;
+  padding: 12px 20px !important;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  background-color: #495057 !important;
+  color: #ffc107 !important;
+}
+
+.dropdown-divider {
+  border-top: 1px solid #495057 !important;
+}
+
+.dropdown-toggle {
+  color: #ffffff !important;
+}
+
+.dropdown-toggle:hover {
+  color: #ffc107 !important;
+  background-color: rgba(255,193,7,0.1) !important;
+}
+
+/* Mobile navbar */
+.navbar-toggler {
+  border-color: rgba(255,255,255,0.3) !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Ensure navbar visibility on all pages */
+body .navbar {
+  background-color: #343a40 !important;
+}
+
+/* ========== STICKY FOOTER - Always at bottom ========== */
+html, body {
+  height: 100%;
+}
+
+#root, .App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+/* Your footer class - replace 'footer' with your actual footer class */
+footer, .footer {
+  flex-shrink: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #343a40, #495057) !important;
+  color: white !important;
+  padding: 2rem 0 !important;
+  margin-top: auto;
+}
+
+/* Fix for register/login pages */
+.register-page, .login-page, .admin-login-container {
+  min-height: 100vh;
+  padding-bottom: 4rem; /* Space for footer */
+}
+
+/* Specific page fixes */
+body:has(.admin-login-container) footer,
+body:has(.register-page) footer,
+body:has(.login-page) footer {
+  position: sticky !important;
+  bottom: 0 !important;
+  z-index: 1000;
+}
